@@ -11,8 +11,8 @@ const Statistics = ({ good, bad, neutral, total, positivePercentage }) => {
           <p className={s.feedback}>Good:{good}</p>
           <p className={s.feedback}>Neutral:{neutral}</p>
           <p className={s.feedback}>Bad:{bad}</p>
-          <p className={s.feedback}>Total:{total()}</p>
-          <p className={s.feedback}>Positive feedback:{positivePercentage()}%</p>
+          <p className={s.feedback}>Total:{total}</p>
+          <p className={s.feedback}>Positive feedback:{positivePercentage}%</p>
         </div>
       ) : (
         <Notification message={'There is no feedback'} />
@@ -24,7 +24,7 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
-  positivePercentage: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 }
 export default Statistics;
