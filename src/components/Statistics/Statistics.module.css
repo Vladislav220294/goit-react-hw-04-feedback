@@ -1,0 +1,23 @@
+.title {
+  font-size: 25px;
+  color: burlywood;
+}
+.box {
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+}
+.feedback {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(141, 114, 192);
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
